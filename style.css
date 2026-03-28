@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+ overflow-x: hidden;
+}
+
+.navbar {
+    position: fixed;
+ height: 60px;
+ width: 100vw;
+ background-color: #1F2937;
+ color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    padding-left: 15%;
+    padding-right: 20%;
+}
+
+.container_logo {
+ height: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.logo {
+ font-size: 1.5rem;
+ font-weight: bold;
+}
+
+.nav_links {
+    flex: 0 2 auto;
+ list-style: none;
+ display: flex;
+  gap: 70px;
+  font-size: 1.1rem;
+  color: gainsboro;
+}
+.nav_links li a {
+ text-decoration: none;
+ color: white;
+ position: relative;
+ cursor: pointer;
+}
+
+.nav_links li a:after {
+ content: "";
+ position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: gainsboro;
+  left: 0;
+  bottom: -5px;
+  border-radius: 2px;
+}
+
+
+.nav_links li a:hover:after {
+ width: 100%;
+}
+
+.section_start {
+ height: 75vh;
+ width: 100vw;
+ display: flex;
+ background-color: #1F2937;
+}
+
+.container_text_start {
+ flex: 1;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ padding-left: 100px;
+ color: white;
+ background-color: #1F2937;
+}
+
+
+.container_text_start h1 {
+ font-size: 3rem;
+ margin-bottom: 60px;
+}
+
+.container_text_start p {
+ font-size: 1.8rem;
+}
+
+.container_text_start button {
+ height: 50px;
+ width: 150px;
+ background-color: transparent;
+ border: 2px solid rgb(241, 217, 0);
+ border-radius: 5px;
+ font-size: 1.1rem;
+ opacity: 0.8;
+ color: rgb(241, 217, 0);
+ margin-left: 60%;
+ margin-top: 60px;
+ cursor: pointer;
+}
+
+
+.container_image_start {
+ flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1F2937;
+}
+
+.container_image_start img {
+ width: 100%;
+ height: auto;
+}
+
+
+.section_options {
+ height: 55vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container_text_options {
+ flex: 1;
+ width: 100%;
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1F2937;
+  font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
+
+.container_text_options h1 {
+    font-size: 1.8rem;
+    position: relative;
+    bottom: 15px;
+}
+
+.container_image_options {
+ flex: 2;
+ width: 100%;
+ display: flex;
+  justify-content: center;
+  gap: 150px;
+  align-items: flex-start;
+}
+
+.container_image_options_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 200px;
+    width: 200px;
+
+}
+
+.container_image_options_content img {
+ width: 200px;
+ height: 200px;
+ border: 1px solid rgb(241, 217, 0);
+ border-radius: 10px;
+ box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.container_image_options_content p {
+ font-size: 1.1rem;
+ color: #1F2937;
+ font-weight: bold;
+}
+
+.section_mensage {
+ height: 40vh;
+ width: 100vw;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background-color: rgb(0, 0, 0, 0.1);
+ color: #1F2937;
+ text-shadow: 1px 1px 2px rgba(255, 255, 255, 1);
+}
+
+.section_mensage p {
+    font-size: 1.8rem;
+    text-decoration: italic;
+    font-weight: 100;
+}
+
+.section_mensage h3 {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    text-align: right;
+}
+
+.section_signUp {
+ height: 50vh;
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.container_signUp {
+ height: 40%;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(241, 217, 0);
+  border-radius: 10px;
+}
+
+.container_text_signUp {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 150px;
+    color: #1F2937;
+}
+
+.container_button_signUp {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_button_signUp button {
+ height: 50px;
+ width: 150px;
+ background-color: transparent;
+ border: 2px solid #1F2937;
+ border-radius: 5px;
+ font-size: 1.1rem;
+ opacity: 0.8;
+ color: #1F2937;
+ cursor: pointer;
+}
+
+
+.section_copyright {
+ height: 10vh;
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background-color: #1F2937;
+ color: white;
+ font-size: 1.1rem;
+}
