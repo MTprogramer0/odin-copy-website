@@ -5,6 +5,15 @@
     font-family: "Roboto", sans-serif;
 }
 
+::-webkit-scrollbar-track {
+ background-color: #F3F4F6;
+}
+
+::-webkit-scrollbar-thumb {
+ background-color: #1F2937;
+ border-radius: 10px;
+}
+
 body {
  overflow-x: hidden;
 }
@@ -21,6 +30,7 @@ body {
     padding: 1rem;
     padding-left: 15%;
     padding-right: 20%;
+    z-index: 1000;
 }
 
 .container_logo {
@@ -105,8 +115,15 @@ body {
  margin-left: 60%;
  margin-top: 60px;
  cursor: pointer;
+ transition: 0.3s ease;
 }
 
+.container_text_start button:hover {
+ background-color: rgb(241, 217, 0);
+ color: #1F2937;
+ border: 2px solid transparent;
+ opacity: 1;
+}
 
 .container_image_start {
  flex: 1;
@@ -164,16 +181,26 @@ body {
     gap: 20px;
     height: 200px;
     width: 200px;
+    transition: 0.3s ease;
+}
 
+.container_image_options_content:hover {
+ transform: translateY(-10px);
+}
+
+.container_image_options_content:hover img{
+ box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .container_image_options_content img {
  width: 200px;
  height: 200px;
- border: 1px solid rgb(241, 217, 0);
+border: 1px solid rgb(241, 217, 0);
  border-radius: 10px;
- box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+ box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
 }
+
+
 
 .container_image_options_content p {
  font-size: 1.1rem;
@@ -202,6 +229,16 @@ body {
     font-size: 1.2rem;
     margin-top: 20px;
     text-align: right;
+}
+
+.section_mensage h3 a {
+    color: #1F2937;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.section_mensage h3 a:hover {
+    text-decoration: underline;
 }
 
 .section_signUp {
@@ -248,6 +285,15 @@ body {
  opacity: 0.8;
  color: #1F2937;
  cursor: pointer;
+ transition: 0.3s ease;
+}
+
+.container_button_signUp button:hover {
+ background-color: #1F2937;
+ color: rgb(241, 217, 0);
+ border: 2px solid transparent;
+ opacity: 1;
+ 
 }
 
 
